@@ -6,7 +6,7 @@ services:
     ports: 
       - "80:8000"
     volumes:
-      - jhub-data:/data
+      - jhub-data:/home
 
 volumes:
   jhub-data:

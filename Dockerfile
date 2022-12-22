@@ -28,7 +28,9 @@ WORKDIR /etc/jupyterhub
 
 RUN jupyterhub --generate-config -f jupyterhub_config.py
 
-COPY . .
+COPY Dockerfile .
+
+COPY jupyterhub_config.py .
 
 EXPOSE 8000
 
