@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  jhub:
+    build: .
+    ports: 
+      - "80:8000"
+    volumes:
+      - jhub-data:/data
+
+volumes:
+  jhub-data:
